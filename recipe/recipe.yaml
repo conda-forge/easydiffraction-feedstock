@@ -39,6 +39,7 @@ requirements:
     - cryspy
     - diffpy.pdffit2
     - diffpy.utils
+    - darkdetect
 
 tests:
   - python:
