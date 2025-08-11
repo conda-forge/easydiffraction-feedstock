@@ -1,6 +1,6 @@
 context:
   name: easydiffraction
-  version: "0.4.1"
+  version: "0.5.0"
   python_min: "3.10"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easydiffraction-${{ version }}.tar.gz
-  sha256: f0af28429e0c13fe63cb6e98077fcd352dda6850b9539fc95ecf30f1f6c52f48
+  sha256: 1cf4be6e056802a76454d6687ffc7b3d3870031a11571276392b85a8ac0d9b6f
 
 build:
   number: 0
