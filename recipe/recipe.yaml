@@ -39,7 +39,11 @@ requirements:
     - cryspy
     - diffpy.pdffit2
     - diffpy.utils
+    # visualization optional deps
     - darkdetect
+    - pandas
+    - py3Dmol
+    - plotly <6.1.0
 
 tests:
   - python:
