@@ -43,7 +43,7 @@ requirements:
     - darkdetect
     - pandas
     - py3Dmol
-    - plotly <6.1.0
+    - plotly
 
 tests:
   - python:
