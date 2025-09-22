@@ -28,6 +28,8 @@ requirements:
     - tabulate
     - asciichartpy
     - pooch
+    - typer
+    - rich
     - varname
     - asteval
     - scipy
@@ -49,7 +51,7 @@ tests:
   - python:
       imports:
         - easydiffraction
-      pip_check: false
+      pip_check: true
       python_version: ${{ python_min }}.*
 
 about:
