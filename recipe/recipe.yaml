@@ -1,6 +1,6 @@
 context:
   name: easydiffraction
-  version: "0.7.3"
+  version: "0.10.1"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easydiffraction-${{ version }}.tar.gz
-  sha256: d7e16f5b11328dda1fd5676b1c4907c6fd680cd6d9a5fdc203669c2b3eb4e913
+  sha256: 5eed129eabdd0680d24421c9c1bd10ade7918f453fe4d9f2a0b07482c33a52d5
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<3.14
+    - numpy
     - colorama
     - tabulate
     - asciichartpy
@@ -41,6 +42,8 @@ requirements:
     - cryspy
     - diffpy.pdffit2
     - diffpy.utils
+    - uncertainties
+    - typeguard
     # visualization optional deps
     - darkdetect
     - pandas
