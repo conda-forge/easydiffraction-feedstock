@@ -24,6 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<3.14
+    - numpy
     - colorama
     - tabulate
     - asciichartpy
@@ -41,6 +42,8 @@ requirements:
     - cryspy
     - diffpy.pdffit2
     - diffpy.utils
+    - uncertainties
+    - typeguard
     # visualization optional deps
     - darkdetect
     - pandas
