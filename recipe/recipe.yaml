@@ -50,6 +50,8 @@ requirements:
     - pandas
     - py3Dmol
     - plotly
+    - jupyterlab
+    - pixi-kernel
 
 tests:
   - python:
