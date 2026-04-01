@@ -23,7 +23,7 @@ requirements:
     - versioningit
     - pip
   run:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }}
     - essdiffraction
     - numpy
     - colorama
