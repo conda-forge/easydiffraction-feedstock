@@ -1,6 +1,6 @@
 context:
   name: easydiffraction
-  version: "0.11.0"
+  version: "0.11.1"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easydiffraction-${{ version }}.tar.gz
-  sha256: 463b0c70d04342141fb83ef2b55146553ee82abf3196135438b8b92b9ff5f011
+  sha256: 3020a532b88e4f87274bcce68b5b559faa9138fe07c72d58975c6e574dcd9a26
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - versioningit
     - pip
   run:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }}
     - essdiffraction
     - numpy
     - colorama
