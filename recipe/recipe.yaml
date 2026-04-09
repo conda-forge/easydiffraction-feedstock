@@ -1,7 +1,7 @@
 context:
   name: easydiffraction
-  version: "0.11.1"
-  python_min: "3.11"
+  version: "0.12.0"
+  python_min: "3.12"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/easydiffraction-${{ version }}.tar.gz
-  sha256: 3020a532b88e4f87274bcce68b5b559faa9138fe07c72d58975c6e574dcd9a26
+  sha256: 0144cc583f2c62134896035724c55c5de504535e837515e06c4a4f2afa1bfdee
 
 build:
   number: 0
@@ -50,8 +50,6 @@ requirements:
     - pandas
     - py3Dmol
     - plotly
-    - jupyterlab
-    - pixi-kernel
 
 tests:
   - python:
