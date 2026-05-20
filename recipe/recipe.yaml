@@ -24,10 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - essdiffraction
     - numpy
-    - colorama
-    - tabulate
     - asciichartpy
     - pooch
     - typer
@@ -45,12 +42,13 @@ requirements:
     - diffpy.pdffit2
     - diffpy.utils
     - uncertainties
+    - h5py
     - typeguard
-    # visualization optional deps
     - darkdetect
     - pandas
-    - py3Dmol
     - plotly
+    - arviz
+    - py3Dmol
 
 tests:
   - python:
