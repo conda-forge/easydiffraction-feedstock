@@ -12,7 +12,7 @@ source:
   sha256: 9ce6e6ee6eafafdf69e41dd5b4d3a135af19808f3d853c721ae9059a54629e0f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -53,10 +53,11 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - easydiffraction
-      pip_check: true
-      python_version: ${{ python_min }}.*
 
 about:
   homepage: https://github.com/easyscience/diffraction-lib/
@@ -67,3 +68,4 @@ about:
 extra:
   recipe-maintainers:
     - MridulS
+    - conda-forge/easyscience
