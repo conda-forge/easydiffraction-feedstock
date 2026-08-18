@@ -39,7 +39,7 @@ requirements:
     - dfo-ls
     - gemmi
     - cryspy >=0.12.1
-    - crysfml >=0.7.0
+    - crysfml >=0.8.0
     - diffpy.pdffit2
     - diffpy.utils
     - uncertainties
