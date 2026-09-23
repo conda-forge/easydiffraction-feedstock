@@ -27,6 +27,7 @@ requirements:
     - numpy
     - asciichartpy
     - pooch
+    - filelock
     - typer
     - rich
     - varname
